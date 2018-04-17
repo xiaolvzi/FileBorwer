@@ -12,15 +12,9 @@ using Android.Provider;
 namespace App14
 {
     [Activity(Label = "App14", MainLauncher = true)]
-    public class MainActivity : Activity, View.IOnClickListener
+    public class MainActivity : Activity
     {
-        public void OnClick(View v)
-        {
-            Intent intent = new Intent(Intent.ActionGetContent);
-            intent.SetType("*/*");
-            intent.AddCategory(Intent.CategoryOpenable);
-            StartActivityForResult(intent, 1);
-        }
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,8 +23,9 @@ namespace App14
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            Button btn = (Button)FindViewById<Button>(Resource.Id.btn);
-            btn.SetOnClickListener(this);
+            var tra = FragmentManager.BeginTransaction();
+            tra.Replace(Resource.Id.fl,new Fragment1());
+            tra.Commit();
         }
 
         protected override void OnActivityResult(int requestCode, [GeneratedEnum] Result resultCode, Intent data)
@@ -73,8 +68,7 @@ namespace App14
             }
             return res;
         }
-
-        //@SuppressLint("NewApi")
+        
          
     public string getPath( Context context,  Uri uri)
         {

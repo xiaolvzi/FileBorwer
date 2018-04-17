@@ -34,5 +34,6 @@ C:\VS_WorkSpace\App14\App14\obj\Debug\linksrc\System.ComponentModel.Composition.
 C:\VS_WorkSpace\App14\App14\obj\Debug\linksrc\App14.dll.mdb
 C:\VS_WorkSpace\App14\App14\bin\Debug\App14.dll.mdb
 C:\VS_WorkSpace\App14\App14\obj\Debug\android\assets\App14.dll.mdb
+C:\VS_WorkSpace\App14\App14\obj\Debug\res\layout\layout1.xml
 C:\VS_WorkSpace\App14\App14\bin\Debug\App14.dll
 C:\VS_WorkSpace\App14\App14\obj\Debug\linksrc\App14.dll.mdb

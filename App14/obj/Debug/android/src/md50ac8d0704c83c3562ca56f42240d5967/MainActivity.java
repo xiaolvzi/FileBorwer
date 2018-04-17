@@ -4,8 +4,7 @@ package md50ac8d0704c83c3562ca56f42240d5967;
 public class MainActivity
 	extends android.app.Activity
 	implements
-		mono.android.IGCUserPeer,
-		android.view.View.OnClickListener
+		mono.android.IGCUserPeer
 {
 /** @hide */
 	public static final String __md_methods;
@@ -13,7 +12,6 @@ public class MainActivity
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
 			"n_onActivityResult:(IILandroid/content/Intent;)V:GetOnActivityResult_IILandroid_content_Intent_Handler\n" +
-			"n_onClick:(Landroid/view/View;)V:GetOnClick_Landroid_view_View_Handler:Android.Views.View/IOnClickListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
 		mono.android.Runtime.register ("App14.MainActivity, App14, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MainActivity.class, __md_methods);
 	}
@@ -41,14 +39,6 @@ public class MainActivity
 	}
 
 	private native void n_onActivityResult (int p0, int p1, android.content.Intent p2);
-
-
-	public void onClick (android.view.View p0)
-	{
-		n_onClick (p0);
-	}
-
-	private native void n_onClick (android.view.View p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
